@@ -9,28 +9,26 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #1f2937;
-  padding: 0px 50px;
+  padding: 0px 25px;
   flex: 1;
-  flex-wrap: wrap;
 }
 
 .top {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 20px;
 }
 
 .bottom {
   display: flex;
   flex-wrap: wrap-reverse;
-  justify-content: space-around;
+  justify-content: center;
   row-gap: 50px;
   padding: 100px 0px;
 }
 
 .bottom .left {
-  min-width: 400px;
-  flex: 1 0 400px;
+  width: 400px;
 }
 
 .bottom .right img {
@@ -72,12 +70,12 @@ body {
   color: #e6e7eb;
 }
 
-.bottom .left button {
+button {
   color: white;
   background-color: #3882f6;
   font-size: 18px;
   font-weight: bold;
-  padding: 8px 24px;
+  padding: 8px 32px;
   border-radius: 10px;
   border: none;
   margin-top: 10px;
@@ -88,7 +86,7 @@ body {
   font-size: 36px;
   font-weight: bold;
   text-align: center;
-  margin: 24px;
+  margin: 50px;
 }
 
 .random .boxes {
@@ -96,7 +94,7 @@ body {
   flex-wrap: wrap;
   gap: 50px;
   justify-content: center;
-  margin-bottom: 24px;
+  margin-bottom: 100px;
 }
 
 .random .boxes img {
@@ -105,10 +103,66 @@ body {
   border-radius: 10px;
 }
 
-.text {
+.random .boxes .text {
   width: 150px;
   text-align: center;
 }
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e7eb;
+  padding: 100px 25px;
+  margin-bottom: 100px;
+}
+
+.quote .text {
+  max-width: 770px;
+  flex-grow: 0;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 100;
+  color: #1f2937;
+  align-self: center;
+}
+
+.quote .text .author {
+  font-weight: 900;
+  color: black;
+  font-style: normal;
+  font-size: 20px;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.action {
+  margin: auto;
+  padding: 50px 0px;
+  max-width: 1000px;
+  background-color: #3882f6;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.action .head {
+  color: #f9faf8;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.action .sub-text {
+  color: #e5e7eb;
+}
+
+.action > button {
+  border-color: white;
+  border-style: solid;
+  border-width: thin;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 /* Footer */
 .footer {
   height: 100px;
@@ -117,4 +171,5 @@ body {
   align-items: center;
   color: #e6e7eb;
   background-color: #1f2937;
+  margin-top: 100px;
 }
