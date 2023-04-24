@@ -1,25 +1,47 @@
 body {
-  overflow: hidden;
   margin: 0;
   display: flex;
+  flex-direction: column;
 }
 
+/* Header */
 .header {
   display: flex;
   flex-direction: column;
   background-color: #1f2937;
-  padding: 20px 0px;
+  padding: 0px 50px;
   flex: 1;
   flex-wrap: wrap;
 }
 
 .top {
   display: flex;
-  justify-content: space-around;
-  gap: 530px;
+  justify-content: space-between;
+  padding-top: 20px;
 }
 
-.links {
+.bottom {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+  row-gap: 50px;
+  padding: 100px 0px;
+}
+
+.bottom .left {
+  min-width: 400px;
+  flex: 1 0 400px;
+}
+
+.bottom .right img {
+  max-width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: scale-down;
+  flex: 1 0 230px;
+}
+
+.top .links {
   display: flex;
   padding: 0;
   margin: 0;
@@ -28,47 +50,31 @@ body {
   gap: 20px;
 }
 
-.logo {
+.top .logo {
   color: #f9faf8;
   font-size: 24px;
   font-weight: bold;
 }
 
-a {
+.top a {
   text-decoration: none;
   color: #e6e7eb;
 }
 
-.main-text {
+.bottom .left .main-text {
   font-size: 48px;
   font-weight: bolder;
   color: #f9faf8;
 }
 
-.filler {
+.bottom .left .filler {
   font-size: 18px;
   color: #e6e7eb;
 }
 
-.bottom {
-  display: flex;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  gap: 50px;
-  justify-content: space-around;
-}
-
-.right img {
-  width: 600px;
-  height: 220px;
-  object-fit: cover;
-  background-color: grey;
-  flex-shrink: 0;
-}
-
-button {
+.bottom .left button {
   color: white;
-  background-color: rgb(45, 122, 255);
+  background-color: #3882f6;
   font-size: 18px;
   font-weight: bold;
   padding: 8px 24px;
@@ -77,6 +83,38 @@ button {
   margin-top: 10px;
 }
 
-.left {
-  width: 400px;
+/* Body */
+.random .head {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin: 24px;
+}
+
+.random .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.random .boxes img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.text {
+  width: 150px;
+  text-align: center;
+}
+/* Footer */
+.footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e6e7eb;
+  background-color: #1f2937;
 }
